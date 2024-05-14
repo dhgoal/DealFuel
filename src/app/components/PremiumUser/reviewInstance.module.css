@@ -1,0 +1,50 @@
+.reviewContainer {
+    position: relative;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    padding: 20px;
+    background-color: #212125; /* Optional: for better visibility */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds subtle shadow */
+    border-radius: 8px; /* Optional: rounded corners */
+    margin-top: 44px; /* Added to compensate for the image hanging out */
+}
+
+.imageWrapper {
+    position: absolute;
+    right: 10px;
+    top: -40px; /* Adjust this value to control how much of the image is outside */
+    width: 75px; /* Set a fixed width */
+    height: 75px; /* Set a fixed height */
+    overflow: hidden; /* Keeps the image within the bounds of the set width/height */
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes bottom space/gap under the image */
+}
+
+.contentWrapper {
+    width: 100%; /* Ensures content uses all available space */
+
+}
+
+.contentWrapper h3{
+    margin: 0;
+}
+
+.contentWrapper h4{
+    margin: 0;
+    font-size: 14px;
+    color: #AD974F;
+    font-weight: normal;
+}
+
+.contentWrapper p {
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 0; /* Ensures no extra space at the bottom */
+}

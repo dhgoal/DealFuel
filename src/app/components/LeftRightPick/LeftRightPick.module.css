@@ -1,0 +1,53 @@
+/* Homepage.module.css */
+.homePage {
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+}
+
+.half {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Aligns children vertically */
+    align-items: center; /* Aligns children horizontally */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Ensure text is centered */
+}
+
+
+.left, .right {
+    width: 50%;
+}
+
+.left {
+    background-color: white;
+    color: black;
+}
+
+.right {
+    background-color: #c5ae61;
+    color: white;
+}
+
+.half:hover {
+    opacity: 0.8;
+}
+
+.bold-and-large {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.image {
+    width: 100%; /* Adjust based on your design requirements */
+    max-width: 200px; /* Adjust based on your design requirements */
+    margin-bottom: 20px; /* Adds some space between the image and the paragraph */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Correct block display */
+    margin-left: auto; /* Center the image */
+    margin-right: auto; /* Center the image */
+}

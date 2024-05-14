@@ -1,0 +1,29 @@
+.skillsContainer {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    padding: 0px;
+    background-color: #212125; /* Adjust if needed */
+    gap: 20px; /* Adds space between rows and items */
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px; /* Set the width of each skill container */
+    margin: 10px; /* Optional margin for spacing */
+}
+
+.circularProgress {
+    width: 80px; /* Width of the circular progress bar */
+    height: 80px; /* Height of the circular progress bar */
+}
+
+.skillLabel {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center; /* Ensure labels are centered */
+}

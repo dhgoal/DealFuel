@@ -1,0 +1,176 @@
+.header {
+    position: fixed; /* Fix the header at the top of the viewport */
+    top: 0; /* Align the top edge of the header with the top edge of the viewport */
+    left: 0; /* Align the left edge of the header with the left edge of the viewport */
+    width: 100%; /* Ensure the header spans the full width of the viewport */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    background-color: var(--color-background); /* Adjust based on your theme */
+    color: var(--color-text);
+    z-index: 1000; /* Ensure the header is above other content */
+    border-bottom: 1px solid #4d4d4d;
+}
+
+.adminHeader {
+    position: fixed; /* Fix the header at the top of the viewport */
+    top: 0; /* Align the top edge of the header with the top edge of the viewport */
+    left: 0; /* Align the left edge of the header with the left edge of the viewport */
+    width: 100%; /* Ensure the header spans the full width of the viewport */
+    display: flex;
+    height: 47px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    background-color: var(--color-background); /* Adjust based on your theme */
+    color: var(--color-text);
+    z-index: 1000; /* Ensure the header is above other content */
+    border-bottom: 1px solid #4d4d4d;
+}
+
+
+.leftSection, .rightSection {
+    display: flex;
+    align-items: center;
+    margin-left:26px;
+    margin-right: 56px;
+    cursor: pointer;
+}
+
+.rightSection{
+
+}
+
+.dropdownMenu {
+    position: absolute;
+    right: 50px;
+    background-color: rgba(43, 43, 45, 0.9); /* Slightly transparent background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none; /* Remove border */
+    border-radius: 8px; /* Increased border-radius for a smoother look */
+    padding: 8px;
+    top: 40px; /* Adjust as necessary */
+    z-index: 1001; /* Ensure it appears above other content */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    width: max-content; /* Adjust width to fit content */
+}
+
+
+.dropdownMenuButton {
+    background-color: #2b2b2d;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    color: #fff; /* Adjust text color as needed */
+    padding: 16px 48px 16px 16px ; /* Padding for better button sizing */
+    margin-bottom: 4px; /* Space between buttons */
+    width: 100%; /* Ensure buttons stretch to the width of the dropdown */
+    text-align: left; /* Align text to the left */
+    border-radius: 4px; /* Optional: Rounded corners for buttons */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for hover effects */
+}
+
+.dropdownMenuButton:not(:last-child) {
+    border-bottom: 1px solid #eeeeee; /* Subtle border for separation */
+}
+
+.dropdownMenuButton:hover {
+    background-color: #3d3d3f; /* Slightly lighter shade on hover */
+    color: #d1d1d1; /* Lighter text color for contrast */
+}
+
+.dropdownMenuButton:last-child {
+    margin-bottom: 0; /* Remove margin for the last button */
+}
+
+
+/* Ensure you have a 'no-underline' class or similar to remove text decoration if using <a> tags */
+.no-underline {
+    text-decoration: none;
+}
+
+
+.icon {
+    width: 24px; /* Or your desired size */
+    height: 24px; /* Maintain aspect ratio */
+    margin-left: 20px; /* Space between icons and other elements */
+    cursor: pointer;
+}
+/* Existing styles */
+.button {
+    width: max-content;
+    margin-right: 15px; /* Space between buttons */
+    cursor: pointer;
+    background-color: transparent; /* No background color */
+    border: none;
+    color: var(--color-text); /* Initial color */
+    font-size: 13px; /* Adjust based on your design */
+    font-weight: normal;
+    transition: color 0.3s; /* Smooth transition for color change */
+    padding: 10px 20px; /* Optional: Adjust based on your design for better button size */
+    text-decoration: none; /* Remove underline from links if button is an <a> tag */
+}
+
+.button:hover {
+    color: var(--color-secondary); /* Change text color on hover */
+}
+
+.button:last-child {
+    margin-right: 0; /* Remove margin for the last button */
+}
+
+/* Rest of your existing styles */
+
+.centerSection {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    height: 100%;
+}
+
+.centerTwoSection{
+    display: flex;
+    align-items: center; /* Align items vertically */
+    height: 100%;
+}
+
+.searchBox {
+    position: relative; /* Allows absolute positioning for the icon within */
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.searchBox input[type="text"] {
+    padding: 5px 10px 5px 36px; /* Adjust padding to make space for the icon */
+    border: 1px solid var(--color-border); /* Use your theme's border color */
+    border-radius: 20px; /* Adjust for rounded borders */
+}
+
+.searchIcon {
+    position: absolute;
+    left: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px; /* Adjust as needed */
+    height: auto;
+}
+
+.logo {
+    width: 50px; /* Adjust based on your logo size */
+    height: auto;
+    cursor: pointer;
+    margin-right: 20px; /* Space between logo and buttons */
+}
+
+.button {
+    margin-right: 15px; /* Space between buttons */
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--color-text);
+    font-size: 13px; /* Adjust based on your design */
+}
+
+.button:last-child {
+    margin-right: 0; /* Remove margin for the last button */
+}

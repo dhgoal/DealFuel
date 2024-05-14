@@ -1,0 +1,46 @@
+.filters {
+    background-color: #212125; /* Or any preferred background */
+    padding: 30px 20px 30px 30px;
+    margin-top: 90px;
+    margin-left: 40px;
+    height: fit-content;
+    color: white;
+    border:1px solid #e8e8e8;
+    border-radius: 8px; /* Optional, for styled corners */
+    width: max-content; /* Adjust width as necessary */
+    position: sticky;
+    top: 104px; /* Adjust this value based on your header's height or desired distance from the top */
+}
+
+.filterSection {
+    margin-bottom: 20px;
+}
+.heading{
+    padding: 10px 20px;
+    background-color: #252525;
+    border-radius: 8px;
+    color: #C5AE61;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.filterTitle {
+    margin-bottom: 10px;
+    font-size: 15px; /* Adjust based on your design */
+    color: #fff; /* Adjust based on your design */
+}
+
+.checkboxGroup {
+    margin-bottom: 5px;
+}
+
+/* Style for the checkbox input and label */
+.checkboxLabel {
+    user-select: none; /* Prevents text selection */
+    font-size: 12px;
+    cursor: pointer;
+    display: block; /* Make label take the full width for easier clicking */
+}
+
+.checkboxInput {
+    margin-right: 10px;
+}

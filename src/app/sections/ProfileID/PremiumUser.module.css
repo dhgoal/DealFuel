@@ -1,0 +1,57 @@
+.faqContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.faqQA {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 60px;
+    border: 1px solid #ccc;
+}
+
+.faqItem {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;  /* Adds a border to the bottom of each item */
+}
+
+.faqItem:last-child {
+    border-bottom: none;  /* Removes the bottom border from the last item */
+}
+
+.faqContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.faqAnswer {
+    padding: 10px;
+    color: #666;
+    background-color: #f9f9f9;
+}
+
+.show {
+    display: block; /* Show when open */
+}
+
+.arrow {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid var(--arrow-color, #333);  /* Uses a CSS variable for the arrow color, fallback to #333 */
+    border-bottom: 2px solid var(--arrow-color, #333);
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.faqItem.open .arrow {
+    transform: rotate(-135deg);
+}
+
+

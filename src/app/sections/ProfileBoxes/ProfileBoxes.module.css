@@ -1,0 +1,47 @@
+.profileBoxes {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #212126; /* Or any preferred background */
+    padding: 30px 20px 30px 30px;
+    width: fit-content;
+    margin-top: 90px;
+    max-width: 760px;
+    margin-left: 140px;
+    height: fit-content;
+    color: white;
+    border-radius: 8px; /* Optional, for styled corners */
+     /* Or your preferred font */
+}
+
+.active {
+    background-color: #9c8848; /* Blue background for active page */
+    color: white; /* White text */
+    border: 1px solid #ac964f; /* Blue border */
+}
+
+.searchBox {
+    display: flex;
+    position: relative; /* Allows absolute positioning for the icon within */
+    width: 100%;
+}
+
+.searchInput{
+    width: 100%;
+}
+
+.searchBox input[type="text"] {
+    padding: 5px 10px 5px 36px; /* Adjust padding to make space for the icon */
+    border: 1px solid var(--color-border); /* Use your theme's border color */
+    border-radius: 20px; /* Adjust for rounded borders */
+}
+
+
+.searchIcon {
+    position: absolute;
+    left: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px; /* Adjust as needed */
+    height: auto;
+}

@@ -1,0 +1,140 @@
+.profileContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 73px 20px;
+    gap: 20px;  /* Space between columns */
+}
+
+.globalWrapper{
+    background-color: #171718;
+}
+
+.loadingWrapper {
+    background-color: #171718;
+    height: 100vh; /* Ensure it covers the full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+
+.profileSidebar {
+    flex: 1;  /* Takes up 1 part of the container */
+    min-width: 280px;
+    background-color: #212124;
+    height: fit-content;
+    padding-bottom: 50px;
+}
+
+.profileContent {
+    flex: 4;  /* Takes up 3 parts of the container */
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+
+    margin-left: 50px;
+}
+
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 600px;
+    height: 50px;
+    background-color: #ac964f;
+    margin-top: 36px;
+}
+
+.cta:hover{
+    background-color: #b9a158;
+}
+
+.salesCalls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates two columns */
+    gap: 50px; /* Space between the grid items */
+    margin: 20px 0; /* Vertical space for the container */
+}
+
+
+.profileImageContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.upperSidebar{
+    background-color: #26262B;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profileName {
+    color: #e0e0e0;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+}
+.selectedRoles{
+    font-weight: normal;
+    color: #AFAFAF;
+    font-size: 12px;
+    width: 50%;
+    margin: 12px auto;
+    text-align: center;
+}
+
+.copyLink{
+    cursor: pointer;
+    width: 70%;
+    text-align: center;
+    padding: 2px 0px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 100px;
+    margin: 10px auto;
+}
+
+.copyLink p{
+    font-size: 10px;
+    color: #1a1a1a;
+}
+
+.profileRole {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0 20px 0;
+}
+
+
+
+.nichesContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    gap: 10px; /* Space between grid items */
+    margin: 20px 0; /* Optional: adds vertical margin for the container */
+}
+
+
+@media (max-width: 768px) {
+    .profileContainer {
+        flex-direction: column;
+    }
+    .profileContent {
+        width: 100%;  /* Full width in mobile view */
+    }
+}

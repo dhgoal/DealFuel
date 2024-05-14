@@ -1,0 +1,28 @@
+.profileDetails {
+    display: grid;
+    margin-top: 16px;
+    width: 80%;
+    margin-left: 13%;
+    grid-template-columns: 2fr 4fr;
+    gap: 8px; /* Adjust the gap size as needed */
+    justify-content: center; /* This centers the grid within the container */
+    align-items: center;
+}
+
+
+.detailRow {
+    display: contents; /* This allows the children to lay out as if they were direct children of the grid */
+}
+
+.detailLabel {
+    text-align: left;
+    font-weight: bold;
+    color: #fdfdfe; /* Adjust color as necessary */
+    font-size: 12px; /* Adjust font size as necessary */
+}
+
+.detailValue {
+    text-align: left;
+    color: #AFAFAF; /* Adjust color as necessary */
+    font-size: 12px; /* Adjust font size as necessary */
+}

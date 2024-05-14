@@ -1,0 +1,9 @@
+/* starRating.module.css */
+.starsContainer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Assuming you have images for filled and empty stars */

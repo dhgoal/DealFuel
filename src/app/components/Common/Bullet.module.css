@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    box-sizing: border-box;
+    height: 20px;
+    width: max-content;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 18px;
+    background-color: #4d4d4d;
+    border: 1px solid #818181;
+    border-radius: 32px;
+    gap: 6px;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for background and border */
+}
+
+.container:hover {
+    background-color: #5e5e5e; /* Slightly lighter than the original color */
+    border-color: #999999; /* Slightly lighter than the original border */
+}
+
+.type {
+    font-weight: bold;
+    font-size: 12px;
+    color: #b9b9b9
+}
+
+.value {
+    font-size: 12px;
+}
+
+.type, .value {
+    flex-shrink: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

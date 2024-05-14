@@ -1,0 +1,39 @@
+.statsSection {
+    display: flex;
+    width: 1080px;  /* Use 100% to make it responsive and adapt to the parent's width */
+    justify-content: space-between; /* This will place equal spacing between each child */
+    align-items: center; /* This aligns children vertically at the same level */
+    margin-top: 30px;
+    padding: 10px 40px;
+}
+
+.stat {
+    flex: 1;  /* Flex-grow to 1 allows each child to take equal width of the parent container */
+    display: flex;
+    flex-direction: column; /* Stack the h2 and p vertically */
+    align-items: center; /* Center the content within each stat block */
+    justify-content: center; /* Vertically center the content within the flex container */
+}
+
+.stat h2, .stat p {
+    margin: 0;  /* Remove default margins */
+    padding: 0; /* Ensure no padding is affecting your layout */
+    text-align: center; /* Center align the text */
+}
+
+.stat p{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.statHeading {
+    color: #f3f3f0;
+    font-weight: bold;
+    font-size: 24px; /* Enhance font size for better visibility */
+}
+
+.statSubheading {
+    color: #ad974f;
+    font-weight: bold;
+    font-size: 16px; /* Smaller than the heading but still pronounced */
+}

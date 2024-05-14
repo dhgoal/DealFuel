@@ -1,0 +1,113 @@
+.wrapper{
+    height: 100vh;
+}
+.homePage {
+    padding:40px 10%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    background-color: #0a0a0a;
+}
+
+.footer{
+    padding:10px 10%;
+    font-size: 12px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure container takes full width */
+
+}
+
+.mainContent{
+    flex: 5;
+}
+
+.imageContainer{
+
+    position: relative;
+    height: 70vh;
+    flex: 4;
+    display: inline-block; /* Ensures the container can be animated */
+    animation: float 3s ease-in-out infinite;
+
+}
+
+
+.eyebrow{
+    color: #ad974f;
+    font-size: 20px;
+}
+
+.headline{
+    font-size: 44px;
+    font-weight: bold;
+}
+
+
+.subheadline{
+    font-size: 18px;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.titleAndButtons{
+
+}
+
+
+.image {
+    width: 100%; /* Adjust based on your design requirements */
+    max-width: 50px; /* Adjust based on your design requirements */
+    margin-bottom: 10px; /* Adds some space between the image and the paragraph */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Correct block display */
+    margin-left: auto; /* Center the image */
+    margin-right: auto; /* Center the image */
+}
+
+.buttons{
+    display: flex;
+    gap: 40px;
+
+}
+
+.button{
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    flex-direction: column;
+    background-color: #ad974f;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.button:hover{
+    background-color: #c5ae61;
+}
+
+.buttonHeading{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buttonSubtitle{
+    color: #1a1a1a;
+
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Adjust the value as needed */
+    }
+}

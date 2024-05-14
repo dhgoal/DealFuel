@@ -1,0 +1,57 @@
+{
+  "name": "dealfuel-signup",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.575.0",
+    "@aws-sdk/node-http-handler": "^3.374.0",
+    "@aws-sdk/s3-request-presigner": "^3.575.0",
+    "@jimp/plugin-contain": "^0.22.12",
+    "@jimp/plugin-resize": "^0.22.12",
+    "@reduxjs/toolkit": "^2.2.2",
+    "axios": "^1.6.8",
+    "bcrypt": "^5.1.1",
+    "chart.js": "^4.4.2",
+    "country-state-city": "^3.2.1",
+    "framer-motion": "^11.0.23",
+    "gm": "^1.25.0",
+    "iso-639-1": "^3.1.2",
+    "jimp": "^0.22.12",
+    "jose": "^5.2.4",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.2.3",
+    "next": "14.1.4",
+    "next-connect": "^1.0.0",
+    "nodemailer": "^6.9.13",
+    "prop-types": "^15.8.1",
+    "react": "^18",
+    "react-chartjs-2": "^5.2.0",
+    "react-circular-progressbar": "^2.1.0",
+    "react-dom": "^18",
+    "react-easy-crop": "^5.0.6",
+    "react-phone-number-input": "^3.3.9",
+    "react-player": "^2.16.0",
+    "react-redux": "^9.1.0",
+    "react-select": "^5.8.0",
+    "react-slick": "^0.30.2",
+    "redux": "^5.0.1",
+    "sharp": "^0.33.3",
+    "slick-carousel": "^1.8.1",
+    "typewriter-effect": "^2.21.0"
+  },
+  "resolutions": {
+    "sharp": "^0.29.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4"
+  }
+}

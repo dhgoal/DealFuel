@@ -1,0 +1,19 @@
+.aboutWrapper{
+
+    margin-top: 40px;
+}
+
+.aboutContainer{
+    font-size: 12px;
+    text-align: justify;
+    padding: 16px;
+    background-color: #212125;
+    width: 1080px;
+}
+
+.bottomSectionHeading{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 8px;
+}

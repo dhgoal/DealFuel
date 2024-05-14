@@ -1,0 +1,41 @@
+/* CustomCollapsiblePanel.module.css */
+.row {
+    display: flex;
+    justify-content: space-between; /* Ensures that items in a row are spaced evenly */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.panel {
+    width: 48%; /* Each panel takes almost half of the container width */
+    padding: 10px;
+    background-color: #212125;
+    color: white;
+    border: 1px solid #555;
+}
+
+
+
+.panelHeader {
+    background-color: #212125;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.leftSide {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.panelContent {
+    padding: 10px;
+    border-top: none;
+}

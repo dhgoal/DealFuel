@@ -1,0 +1,19 @@
+.dashboard {
+    display: flex;
+    color: #242424; /* Light text color for contrast */
+    width: 100%;
+    height: 100%;
+    transform: none;
+    padding-bottom: 100px;
+}
+
+
+.mainContent {
+    display: flex;
+    background-color: #171718;
+    margin-top: 20px; /* Adjust based on your header's height */
+    padding-bottom: 100px;
+}
+
+/* Add other styles for .filters and .profileBoxes if they're not already defined */
+

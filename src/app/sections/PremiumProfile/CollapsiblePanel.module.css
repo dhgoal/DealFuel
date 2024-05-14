@@ -1,0 +1,44 @@
+.panel {
+    width: 100%;
+    padding: 10px 2%;
+    border-top: 1px solid #555555;
+}
+
+.panelHeader {
+    background-color: #171719;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.leftSide {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.panelContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 10px; /* Adjust padding to avoid affecting height */
+}
+
+.panelContent.open {
+    max-height: 1000px; /* Set a high value to allow content expansion */
+    transition: max-height 0.5s ease-in-out;
+    padding: 10px 10px; /* Add padding when open */
+}
+
+.panelContent.closed {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0 10px; /* Remove padding when closed */
+}

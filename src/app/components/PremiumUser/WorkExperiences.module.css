@@ -1,0 +1,148 @@
+.sectionContainer {
+    padding:  40px 100px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.bottomSectionHeading {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #333; /* Example text color */
+}
+
+.timelineContainer {
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.horizontalLine {
+    position: absolute;
+    top: 45px; /* Adjust based on the position of the circles */
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #FFFFFF40; /* Semi-transparent white */
+    z-index: 1;
+}
+
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    margin-right: 50px; /* Adjust spacing between entries */
+    position: relative;
+    z-index: 2;
+}
+
+.circle {
+    width: 14px; /* Adjust size as needed */
+    height: 14px; /* Adjust size as needed */
+    border-radius: 50%;
+    background-color: #FFFFFF; /* Circle color */
+    margin-bottom: 10px;
+    position: absolute;
+    top: -22px; /* Adjust to align with horizontal line */
+}
+
+.experienceContent {
+    width: 290px;
+    background-color: #212125;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+.niche{
+    font-size: 12px;
+    color: #A6A6A6;
+}
+
+.dates{
+    color: #AD974F;
+    font-weight: bold;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    font-size: 12px;
+    background-color: #212125;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 4;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.circle:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.niche, .dates, .role, .offerPricePoint, .totalRevenueContribution, .responsibilities {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: #545454;
+    margin: 14px 0;
+}
+
+.highlightReelTitle {
+    margin: 14px 0 10px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.highlightReelList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.highlightItem {
+    margin-bottom: 10px;
+    font-size: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.highlightDot {
+    height: 6px; /* Adjust size as needed */
+    width: 6px; /* Adjust size as needed */
+    background-color: #ffffff; /* Set the color of your choice */
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.highlightText {
+    margin-left: 8px;
+}

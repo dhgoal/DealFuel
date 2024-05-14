@@ -1,0 +1,22 @@
+.socialCard {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions for hover effects */
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #202023; /* Default background color */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow by default */
+}
+
+.socialCard:hover {
+    background-color: #2d2d31; /* Slightly darker on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+    transform: translateY(-2px); /* Slightly raise the card */
+}
+
+.socialLink {
+    font-size: 12px; /* Maintaining the existing font size style */
+}

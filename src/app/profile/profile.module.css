@@ -1,0 +1,392 @@
+/* Profile.module.css */
+
+.loadingContainer{
+    height: 100vh;
+    overflow: hidden;
+}
+.profileContainer {
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #171718;
+    height: 100%; /* Adjust based on your layout */
+    color: white;
+    padding-bottom: 100px;
+}
+
+.imageText{
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+.leftSideProfile{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rightSideProfile{
+    margin-left: 90px;
+    display: flex;
+    gap:30px;
+    margin-top: 16px;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the start, adjust as needed */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px; /* Spacing above the buttons, adjust as needed */
+}
+
+.profileButton {
+    padding: 13px 36px; /* Adjust padding as needed */
+    background-color: #ad974f; /* Example background color */
+    color: white; /* Text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; /* Optional: for rounded corners */
+    /* Add more styles as per your design */
+}
+
+.profileButton:hover {
+    background-color: #c5ae61; /* Change to desired hover color */
+}
+
+.profileButtonTwo {
+    padding: 13px 36px; /* Adjust padding as needed */
+    background-color: #F5F5F1; /* Example background color */
+    color: #101828; /* Text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; /* Optional: for rounded corners */
+    /* Add more styles as per your design */
+}
+
+.profileButtonTwo:hover {
+    background-color: #ecece9; /* Change to desired hover color */
+}
+
+.introSection {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: max-content;
+
+    text-align: center;
+
+}
+
+.outerIntroSection{
+    margin-bottom: 40px; /* Adjust based on your layout */
+    padding: 36px 36px 16px 36px;
+    background-color: #212122;
+    border-radius: 4px;
+}
+
+.uploadPrompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #ad974f;
+    cursor: pointer;
+
+}
+
+.loadingCircle {
+    border: 5px solid #424242; /* Light grey background */
+    border-top: 5px solid #1f1e1e; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.uploadPrompt:hover {
+    color: #c5ae61; /* Slightly darker for hover effect */
+}
+.cropperModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* or fixed size */
+    border-radius: 4px;
+    max-width: 400px;
+    background: white;
+    padding: 48px 20px 20px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.cropperContent {
+    flex: 1; /* Ensures cropper takes up the available space */
+    position: relative; /* For Cropper's absolute positioning */
+    aspect-ratio: 1; /* Maintains a square aspect ratio */
+}
+
+.cropperControls {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cropButton, .cancelButton {
+    flex-grow: 1;
+    margin: 5px 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #ad974f;
+}
+
+.cropButton:hover{
+    background-color: #c5ae61 ;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 24px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Add to your profile.module.css or a relevant CSS module */
+.zoomSliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.zoomSliderLabel {
+    margin-right: 10px;
+}
+
+.zoomSlider {
+    width: 100%; /* Adjust based on your modal's width */
+}
+
+
+/* Add more styling as needed */
+
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for better focus */
+    z-index: 100; /* High z-index to ensure it's on top */
+}
+
+.modalContent {
+    width: 300px;
+    height: 150px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    animation: modalFadeIn 0.3s ease-out forwards;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.popupMessage {
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.closeButton {
+    padding: 8px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ad974f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.closeButton:hover {
+    background-color: #c5ae61;
+}
+
+
+
+.videoPreview {
+    position: relative;
+    width: 60%; /* Adjust based on your design */
+    /* This should match the aspect ratio of your video */
+    cursor: pointer;
+    overflow: hidden; /* To ensure the video does not exceed the container */
+}
+
+.videoElement {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will ensure the video covers the area nicely, change to 'contain' if you need to see the whole video */
+}
+
+
+.playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Creates a circular button */
+    background-color: #ff6a00; /* Adjust based on your design */
+    border: none;
+    cursor: pointer;
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust based on your layout */
+}
+
+.bookCallButton, .viewSalesButton {
+    background-color: #101828; /* Adjust based on your design */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase; /* Style as needed */
+}
+
+/* Add this if not present for the stats section alignment */
+.statsSection {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 40px; /* Adjust based on your design */
+    margin-top: 20px;
+    background-color: #212123;
+    padding:40px 40px
+}
+
+.stat h2 {
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+.statHeading{
+    color:#f3f3f0 ;
+    font-weight: bold;
+}
+
+.statSubheading{
+    color: #ad974f;
+    font-weight: bold;
+}
+
+.stat p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.verticalLineContainer {
+    margin-left: 250px; /* Default margin for large screens */
+    margin-right: 30px;
+}
+
+.sectionContainer{
+    flex: 1;
+    padding: 20px;
+    background-color: #212123;
+    width: 370px;
+    height: fit-content;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.sectionContainer:hover{
+    flex: 1;
+    padding: 20px;
+    background-color: #1a1a1c;
+    width: 370px;
+    height: fit-content;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+.bottomSectionHeading{
+    color: #ad974f;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+@media (max-width: 1200px) {
+    .verticalLineContainer {
+        margin-left: 150px; /* Reduced margin for medium screens */
+    }
+}
+
+@media (max-width: 1040px) {
+    .verticalLineContainer {
+        margin-left: 100px; /* Further reduced margin for small screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .verticalLineContainer {
+        margin-left: 50px; /* Minimum margin for extra small screens */
+    }
+}
